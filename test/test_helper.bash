@@ -7,7 +7,7 @@ build_image() {
 
   docker build \
     --build-arg BASE_NAME=$BASE_NAME \
-		--build-arg BASE_VERSION=$BASE_VERSION \
+	  --build-arg BASE_VERSION=$BASE_VERSION \
     -t $IMAGE_NAME $BATS_TEST_DIRNAME/../image
 }
 
